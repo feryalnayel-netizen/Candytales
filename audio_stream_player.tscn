@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cxelv6w2xmp66"]
+
+[ext_resource type="AudioStream" uid="uid://dlxto83srixbl" path="res://ssamairi.mp3" id="1_g84o6"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=738616776]
+stream = ExtResource("1_g84o6")
+autoplay = true

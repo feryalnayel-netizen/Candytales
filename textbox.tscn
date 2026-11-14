@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://81ufakdknjn7"]
+
+[ext_resource type="FontFile" uid="uid://baf2lbebwn88x" path="res://yolk_6_v1.1/Yolk 6.ttf" id="1_vng66"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bx8n8"]
+bg_color = Color(0.9717755, 0.97177535, 0.97177535, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.061047055, 0.01977789, 0.0032495477, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5h11f"]
+bg_color = Color(0.66162944, 0.66162944, 0.66162926, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5iqjx"]
+
+[node name="Textbox" type="CanvasLayer" unique_id=49012896]
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1017608083]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -220.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="Panel" type="Panel" parent="MarginContainer" unique_id=1011260013]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bx8n8")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=1145736772]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="MarginContainer/MarginContainer" unique_id=322107660]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5h11f")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer" unique_id=1615882276]
+layout_mode = 2
+
+[node name="Start" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer" unique_id=17692869]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_vng66")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/focus = SubResource("StyleBoxFlat_5iqjx")
+text = "*"
+
+[node name="Label2" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer" unique_id=1436137035]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_vng66")
+theme_override_font_sizes/font_size = 64
+text = "TEXT"
+
+[node name="End" type="Label" parent="MarginContainer/MarginContainer/HBoxContainer" unique_id=435652462]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_vng66")
+theme_override_font_sizes/font_size = 64
+text = "v"

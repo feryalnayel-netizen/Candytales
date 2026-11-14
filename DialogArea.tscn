@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bmxovvycjaxlc"]
+
+[ext_resource type="Script" uid="uid://bh2twlxylqg8l" path="res://DialogArea.gd" id="1_hd7v5"]
+
+[node name="DialogArea" type="Area2D" unique_id=184739527 groups=["dialoguearealolly"]]
+process_mode = 1
+scale = Vector2(0.8671875, 1.375)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_hd7v5")
+
+[node name="dialoguearea" type="CollisionShape2D" parent="." unique_id=606883878]
+position = Vector2(-149.90997, -38.54545)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
